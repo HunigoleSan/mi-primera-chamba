@@ -1,0 +1,185 @@
+/* Importamos fuentes de Google Fonts */
+
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+/* Variables CSS */
+:root {
+    --texto-general-main: #2E2E2E;
+    --main-general: #FFFFFF;
+    --color-inputs: #F6F7FA;
+    --asterisco-label: #FF0000;
+    --borde-btn: #236EDE;
+    --color-text-btn: #000000;
+    --color-flecha-asunto: #2E2E2E;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------- MAIN ----------------------------------- */
+
+/* Main */
+main {
+    width: 100%;
+}
+
+/* Contenedor del banner del main */
+.c-banner-img {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagen del contenedor */
+.c-banner-img img {
+    width: 100%;
+    display: block;
+    filter: brightness(48%);
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--main-general);
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    z-index: 1;
+}
+
+
+.c-info-contactanos {
+    width: 100%;
+    display: grid;
+    margin-block: 3rem;
+    grid-template-columns: 50% 50%;
+    padding-inline: 3rem;
+    gap: 2rem;
+}
+
+
+.info-comentarios {
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.2); 
+    font-family: 'inter', sans-serif;
+}
+
+.info-comentarios h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.5rem;
+}
+
+label {
+    font-size: 16px;
+}
+
+label::after {
+    content: '*';
+    color: red;
+    margin-left: 0.3rem;
+}
+
+
+input[type="text"],
+textarea {
+    padding: 0.8rem;
+    background-color: var(--color-inputs);
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+label input[type="checkbox"] {
+    margin-right: 0.5rem;
+    border: 10px solid var(--borde-btn);
+}
+
+form button {
+    border: 1px solid var(--borde-btn);
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    width: 50%;
+}
+
+/* form button:hover {
+    background-color: #0056b3;
+}
+ */
+
+.info-ubicacion {
+    width: 95%;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: -5px 10px 10px  rgba(0, 0, 0, 0.2);
+}
+
+.info-ubicacion h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.info-ubicacion iframe {
+    width: 100%;
+    border-radius: 8px; 
+    margin-bottom: 1.5rem; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.info-ubicacion p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 0.5rem 0;
+}
+
+.info-ubicacion p b {
+    color: #333; 
+}
+
+.info-ubicacion p:last-child {
+    font-weight: bold; 
+    color: var(--borde-btn); 
+}
+
+/* ------------------------------------------------------------------------------ */
+
+/* Medai Querys */
+

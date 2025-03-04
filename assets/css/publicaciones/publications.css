@@ -1,0 +1,222 @@
+.grey{
+    color: var(--icon-grey);
+}
+.bx{
+    font-size: var(--icon-size);
+}
+body{
+    display: flex;
+    gap: 19px; /* Por el momento */
+    height: 100%;
+    flex-direction: column;
+}
+/* FILTROS */
+.jobs{
+    display: flex;
+    flex-direction: column;
+    min-width: 18.75rem;
+    max-width: 18.75rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-grey);
+    position: fixed;
+    height: calc(100% - 2rem);
+    overflow: hidden;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-soft-blue);
+    padding: 1rem 0.625rem;
+    align-items: center;
+}
+.actions__title{
+    font-size: var(--font-size-title);
+    color: var(--text-white);
+}
+.actions__options{
+    display: flex;
+    gap: 0.625rem;
+}
+.actions__options-item{
+    font-size: var(--font-size-small);
+    color: var(--text-white);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.filters__group--search{
+    padding: 1rem 0.525rem;
+    border-bottom: 1px solid var(--border-grey);
+}
+
+.input__group{
+    display: flex;
+    align-items: stretch;
+
+    border-radius: 0.375rem;
+    width: 100%;
+}
+.input__group-content{
+    display: flex;
+    padding: 0.5rem 0.406rem;
+    border-width: 1px;
+    border-color: var(--border-grey);
+    border-style: solid;
+    border-right: 0px;
+    border-radius: 0.375rem 0rem 0rem 0.375rem;
+}
+
+.icon-size-19{
+    font-size: 1.188rem; /* 19px */
+}
+.bx-search{
+    margin-right: 0.313rem;
+}
+.btn{
+    background-color: var(--btn-blue);
+    color: var(--text-white);
+    border-radius: 0rem 0.375rem 0.375rem 0rem;
+    font-size: var(--font-size-btn);
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-search{
+    padding: 0rem 0.75rem;
+}
+.control{
+    width: 100%;
+    font-size: var(--font-size-btn);
+}
+.control::placeholder{
+    font-size: var(--font-size-btn);
+}
+
+.filters__group{
+    color: var(--text-grey);
+}
+
+.filters__group-item{
+    color: inherit;
+    padding: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.filters__group-label:hover ,
+.filters__group-label:hover > span > i,
+.filters__group-label:hover > i,
+.list__dropdown-result:hover{
+    color: var(--text-blue);
+    cursor: pointer;
+}
+
+.filters__group-label,
+.control-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters__dropdown,
+.list__dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    max-height: 0rem;
+    overflow: hidden;
+    transition: max-height 500ms ease;
+    background: white;
+}
+
+/* solo se invocan desde javascript */
+.filters__dropdown-show,
+.list__dropdown-show{
+    max-height: 500px;
+}
+
+.filters__dropdown-item,
+.list__dropdown-result{
+    padding: 0.25rem .5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-grey);
+}
+.list__dropdown-result{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.control-label{
+    padding: 0.25rem .5rem;
+}
+.filters__group-label-padding{
+    padding: 0.25rem .5rem;
+    border-bottom: 1px solid var(--border-grey);
+}
+.filters__dropdown-item--padding{
+    padding: 0;
+}
+.filters__dropdown--gap,
+.list__dropdown{
+    gap: 0;
+}
+.filters__dropdown-item--border,
+.list__dropdown-result{
+    border: 0;
+}
+/* PUBLICACIONES */
+
+.publications{
+    display: flex;
+    gap: 1.25rem;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 19.375rem;
+}
+
+.company{
+    width: 100%;
+    display: grid;
+    border-radius: 5px;
+    gap: 0.75rem;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    border: 1px solid #F4F4F4; /* por el momento */
+    border-left: 3px solid var(--primary);
+}
+.company__information{
+    display: flex;
+    flex-direction: column;
+    gap: 0.438rem;
+}
+.company__information-title{
+    color: var(--primary);
+    font-size: var(--font-size-subtitle);
+    font-weight: 600;
+}
+.company__information-subtitle{
+    color: var(--tertiary);
+    font-size: var(--font-size-subtitle);
+    font-weight: 600;
+}
+.company__information-description{
+    color: var(--tertiary);
+    font-size: var(--font-size-paragraph);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.company__contract{
+    gap: 0rem;
+}
+.company__contract-item{
+    display: flex;
+    align-items: center;
+    gap: 0.563rem;
+    color: var(--tertiary);
+    font-size: var(--font-size-paragraph);
+}

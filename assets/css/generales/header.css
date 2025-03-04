@@ -1,0 +1,123 @@
+/* Contenedor padre */
+.c-header {
+  position: relative;
+  background-color: var(--font-size-title);
+  padding-inline: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+  box-shadow: 0px 8px 27px -15px #1736657e;
+}
+
+/* Contenedro hijo1 */
+.c-logo {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: var(--font-size-title);
+}
+
+/* Contenedro hijo2 */
+.c-enlaces-btn {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.c-enlaces {
+  display: flex;
+  gap: 1rem;
+}
+
+.c-enlaces a {
+  /* color: var(--text-grey); */
+  color: #000;
+}
+
+.c-btns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.c-btns button {
+  cursor: pointer;
+}
+
+.btn-login {
+  padding: 8px 12px;
+  background-color: var(--btn-blue);
+  border-radius: 6px;
+  color: var(--text-white);
+}
+
+.btn-register {
+  padding: 8px 12px;
+  border: 1px solid var(--btn-blue);
+  border-radius: 6px;
+  color: var(--btn-blue);
+}
+
+.c-hamburguer {
+  display: none;
+}
+
+.c-hamburguer img {
+  width: 3rem;
+  cursor: pointer;
+}
+
+/* Menú responsive */
+.menu-movil {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  background-color: var(--text-white);
+  box-shadow: 0px 8px 27px -15px #1736657e;
+  padding: 0rem 4rem;
+
+  transition: max-height 0.5s ease-out, padding 0.3s ease-out;
+}
+
+.menu-movil.activo {
+  max-height: 500px;
+  padding: 1rem 4rem;
+}
+
+.menu-movil a {
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.c-btns-movil {
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+  .c-enlaces-btn {
+      display: none;
+  }
+
+  .c-hamburguer {
+      display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .c-header {
+      padding-inline: 1rem;
+  }
+
+  .menu-movil {
+      padding: 0rem 1rem;
+  }
+
+  .menu-movil.activo {
+      padding: 1rem;
+  }
+}
