@@ -43,10 +43,10 @@ export function galeriaFunction() {
         <h1>Nuestros valores</h1>
 
         <div class="content-galeria">
-            <img class="iconIMG_nosotros" src="/media/nosotros-img/icon1_nosotros.png" alt="iconIMG_nosotros">
-            <img class="iconIMG_nosotros" src="/media/nosotros-img/icon2_nosotros.png" alt="iconIMG_nosotros">
-            <img class="iconIMG_nosotros" src="/media/nosotros-img/icon3_nosotros.png" alt="iconIMG_nosotros">
-            <img class="iconIMG_nosotros" src="/media/nosotros-img/icon4_nosotros.png" alt="iconIMG_nosotros">
+            <img class="iconIMG_nosotros" src="../media/nosotros-img/icon1_nosotros.png" alt="iconIMG_nosotros">
+            <img class="iconIMG_nosotros" src="../media/nosotros-img/icon2_nosotros.png" alt="iconIMG_nosotros">
+            <img class="iconIMG_nosotros" src="../media/nosotros-img/icon3_nosotros.png" alt="iconIMG_nosotros">
+            <img class="iconIMG_nosotros" src="../media/nosotros-img/icon4_nosotros.png" alt="iconIMG_nosotros">
         </div>
 
 
