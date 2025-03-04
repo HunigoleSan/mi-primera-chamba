@@ -3,7 +3,7 @@ export function galeriaFunction() {
     galeria.classList.add("nosotros-galeria");
     galeria.innerHTML = `
         <div class="content-galeria">
-            <img class="img_galeria" src="/media/nosotros-img/nosotrosIMG_galeria1.png" alt="img_galeria">
+            <img class="img_galeria" src="../media/nosotros-img/nosotrosIMG_galeria1.png" alt="img_galeria">
             <div class="contenido-galeria">
              <h2>¿Quiénes Somos?</h2><br>
              <p>
@@ -25,11 +25,11 @@ export function galeriaFunction() {
                que impulsen su desarrollo profesional.
             </p>
            </div>  
-            <img class="img_galeria" class="img_galeriaR" src="/media/nosotros-img/nosotrosIMG_galeria2.png" alt="img_galeria">
+            <img class="img_galeria" class="img_galeriaR" src="../media/nosotros-img/nosotrosIMG_galeria2.png" alt="img_galeria">
         </div>
 
         <div class="content-galeria">
-               <img class="img_galeria" src="/media/nosotros-img/nosotrosIMG_galeria3.png" alt="img_galeria">
+               <img class="img_galeria" src="../media/nosotros-img/nosotrosIMG_galeria3.png" alt="img_galeria">
            <div class="contenido-galeria">
             <h2>Nuestra Visión</h2><br>
             <p>
