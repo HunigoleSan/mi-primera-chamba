@@ -1,5 +1,6 @@
 export function headerFunction() {
     const header = document.createElement("header");
+    let url_base = "https://hunigolesan.github.io/mi-primera-chamba/"
     header.classList.add("c-header");
     header.innerHTML = `
         <div class="c-logo">
@@ -8,10 +9,10 @@ export function headerFunction() {
 
         <div class="c-enlaces-btn">
             <div class="c-enlaces">
-                <a href="/index.html">Inicio</a>
-                <a href="/pages/buscar.html">Buscar Empleo</a>
-                <a href="/pages/nosotros.html">Nosotros</a>
-                <a href="/pages/contacto.html">Contáctanos</a>
+                <a href="${url_base}/index.html">Inicio</a>
+                <a href="${url_base}/pages/buscar.html">Buscar Empleo</a>
+                <a href="${url_base}/pages/nosotros.html">Nosotros</a>
+                <a href="${url_base}/pages/contacto.html">Contáctanos</a>
             </div>
             <div class="c-btns">
                 <button class="btn-login">Iniciar Sesión</button>
