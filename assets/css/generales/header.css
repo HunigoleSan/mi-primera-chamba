@@ -7,6 +7,7 @@
   justify-content: space-between;
   padding-block: 1rem;
   box-shadow: 0px 8px 27px -15px #1736657e;
+  z-index: 10;
 }
 
 /* Contenedro hijo1 */
@@ -100,24 +101,26 @@
 
 @media screen and (max-width: 768px) {
   .c-enlaces-btn {
-      display: none;
+    display: none;
   }
 
+
   .c-hamburguer {
-      display: block;
+    display: block;
   }
 }
 
 @media screen and (max-width: 425px) {
   .c-header {
-      padding-inline: 1rem;
+    padding-inline: 2rem;
   }
 
   .menu-movil {
-      padding: 0rem 1rem;
+    padding: 0rem 1rem;
   }
 
   .menu-movil.activo {
-      padding: 1rem;
+    padding: 1rem;
   }
+  
 }

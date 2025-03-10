@@ -1,4 +1,3 @@
-
 :root {
     --color-blue: #236EDE;
     --color-white: #FFFFFF;
@@ -188,6 +187,10 @@ p {
     border-bottom-right-radius: 6px;
 }
 
+.c-banner-movil {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
 
     /* Contenedor del banner */
@@ -208,5 +211,68 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-    /* CAMBIAR EL BANNER POR EL QUE ES DE VERCION MOVIL */
+
+    :root {
+        --font-size-h1: 2.25rem;
+        --font-size-h2: 1.25rem;
+        --font-size-p: 0.8rem;
+    }
+
+    .stast-info {
+        font-size: 20px;
+    }
+
+    .c-stats {
+        padding-inline: 2rem;
+        padding-block: 0px 50px;    
+    }
+
+    .c-servicios {
+        padding-inline: 2rem;
+    }
+
+    .c-target-services div {
+        height: 19rem;
+    }
+
+    .c-target-services {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .c-trabajadores {
+        padding: 20px 10px 0px 0px;
+    }
+
+    .c-banner {
+        display: none;
+    }
+
+    .c-banner-movil {
+        display: block;
+        width: 100%;
+    }
+
+    .c-trabajadores {
+        width: 100%;
+        background-color: #E3BA82;
+    }
+
+    .c-hero-movil {
+        background-color: var(--btn-blue);
+        color: var(--text-white);
+        padding: 24px;
+    }
+
+    .c-hero-btns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .c-trabajadores img {
+        width: 100%;
+    }
+
+    .c-stats {
+        flex-direction: column;
+    }
 }
