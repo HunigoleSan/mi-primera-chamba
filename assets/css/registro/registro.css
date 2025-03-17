@@ -1,100 +1,222 @@
-.contenedor_registro {
+:root {
+    --primary: #1A29D1;
+    --secondary: orange;
+    --tertiary: #69707B;
+
+    /* BACKGROUND COLORS */
+    --bg-soft-blue: #3282FA;
+
+    /* TEXT COLOR */
+    --text-white: #ffffff;
+    --text-grey: #697070;
+    --text-blue: #1A29D1;
+
+    /* Colors Icons */
+    --icon-grey: #69707B;
+
+    /* font size */
+    /* Mucho cuidado que las medidas del rem se basan en el padre */
+    --font-size-title: 1.125rem;
+    /* 18px */
+    --font-size-subtitle: 1rem;
+    /* 16px */
+    --font-size-btn: 0.938rem;
+    /* 15px */
+    --font-size-paragraph: 0.875rem;
+    /* 14px */
+    --font-size-small: 0.813rem;
+    /* 13px */
+
+    /* size icons */
+    --icon-size: 1.5rem;
+
+    /* Borders */
+    --border-grey: #F4F4F4;
+
+    /* BOTONES */
+    --btn-blue: #0967F3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+.contenedor-register {
     width: 100%;
-    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.c-info-register {
     display: flex;
-}
-
-/* cotenedore1 */
-
-.contenedor_img {
-    width: 50%;
-    height: auto;
-}
-
-.contenedor_texto{
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    padding: 2rem;
-}
-h1{
-    font-size: 2rem;
-    color: var(--btn-blue);
+    height: 90vh;
+    padding: 3rem;
+    padding-inline: 10rem;
 }
 
-/* contenedor 2*/ 
-.contenedor_formulario {
+.c-info-register h1 {
+    font-size: 35px;
+    color: #236EDE;
+    padding-inline-end: 6rem;
+    margin-block: 1rem;
+}
+
+.c-info-register p {
+    font-size: 12.5px;
+    margin-block: 1rem;
+}
+
+.c-info-register img {
+    margin: auto;
     width: 50%;
-    height: auto;
+    margin-block: 5rem;
 }
 
-.formulario_registro {
-    padding: 8rem;
+/* Contenedor Formulario */
+
+.c-form-register {
+    width: 100%;
+    padding: 3rem;
 }
 
-h2,
-p {
+.intro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.intro-form h2 {
     text-align: center;
-    
+
 }
 
-.seccion_displayfle {
-    width: 100%;
+.intro-form p {
+    margin: 0;
+
+}
+
+.intro-form a {
+    text-decoration: none;
+
+    color: #236EDE;
+
+    font-weight: bold;
+
+}
+
+.intro-form .p-a-group {
     display: flex;
-    justify-content: space-between;
-    margin: 0.5rem;
+
+    justify-content: center;
+
+    gap: 10px;
+
 }
 
-.input_100 {
-    width: 95%;
-    padding: 5px 15px;
-    background-color: #eafcf9;
-    border: 1px black solid;
-    border-radius: 3px;
+.form-register {
+    margin-top: 2rem;
 }
 
-input {
-    background-color: #eafcf9;
-    border: 1px black solid;
-    padding: 5px;
-    border-radius: 3px;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
-.contenido {
+form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-block: 1rem;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     width: 100%;
 }
 
-button {
+.name-apellido-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
     width: 100%;
-    padding: 10px 15px;
-    background-color: var(--btn-blue);
-    color: var(--text-white);
-    border: 1px var(--btn-blue) solid;
-    border-radius: 5px;
 }
 
-@media screen and (max-width: 700px) {
+.name-apellido-group input {
+    width: 100%;
+}
 
-    .contenedor_registro {
-        width: 100%;
+#subir {
+    background-color: #236EDE;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    margin-block: 1rem;
+}
+
+#subir:hover {
+    background-color: #1a5cbf;
+}
+
+/* Media Queris */
+
+@media screen and (max-width: 1400px) {
+    .c-info-register{
+        padding-inline: 4rem;
+    }
+
+    .c-info-register h1{
+        font-size: 35px;
+        margin-block: 0.5rem;
+        padding-inline-end: 7rem;
+    }
+
+    .c-info-register p{
+        margin-block: 0.5rem;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .c-info-register img{
+        margin-block: 2rem;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .contenedor-register{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .c-info-register{
         height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    /* contenedor 1*/
-    .contenedor_img {
-        width: 100%;
-        height: auto;
-    }
-    
-    /* contenedor 2*/
-    .contenedor_formulario {
-        width: 100%;
-        height: auto;
     }
 
-    .formulario_registro {
-        padding: 2rem;
+    .c-info-register{
+        padding-inline: 1rem;
     }
 
+    .c-info-register h1{
+        padding-inline-end: 1rem;
+    }
 
-
+    .c-form-register{
+        padding: 1rem;
+    }
 }
