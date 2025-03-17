@@ -49,14 +49,16 @@
   padding: 8px 12px;
   background-color: var(--btn-blue);
   border-radius: 6px;
-  color: var(--text-white);
+  color: var(--text-white) !important;
+  text-align: center;
 }
 
 .btn-register {
   padding: 8px 12px;
   border: 1px solid var(--btn-blue);
   border-radius: 6px;
-  color: var(--btn-blue);
+  color: var(--btn-blue) !important;
+  text-align: center;
 }
 
 .c-hamburguer {

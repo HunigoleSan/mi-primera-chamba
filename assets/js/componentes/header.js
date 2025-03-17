@@ -22,7 +22,7 @@ export function headerFunction() {
 
         <!-- Icono Oculto Inicialmente -->
         <div class="c-hamburguer">
-            <img onclick="touchHamburguer()" src="../../media/svg/hamburguer-alter.svg" alt="Menú hamburguesa">
+            <img onclick="touchHamburguer()" src="${url_base}/media/svg/hamburguer-alter.svg" alt="Menú hamburguesa">
         </div>
     
         <!-- Menú Oculto Inicialmente -->
