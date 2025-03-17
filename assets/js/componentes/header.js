@@ -15,8 +15,8 @@ export function headerFunction() {
                 <a href="${url_base}/pages/contacto.html">Contáctanos</a>
             </div>
             <div class="c-btns">
-                <button class="btn-login">Iniciar Sesión</button>
-                <button class="btn-register">Registrarse</button>
+                <a href="${url_base}/pages/iniciar_sesion.html" class="btn-login">Iniciar Sesión</a>
+                <a href="${url_base}/pages/registro.html" class="btn-register">Registrarse</a>
             </div>
         </div>
 
@@ -27,13 +27,13 @@ export function headerFunction() {
     
         <!-- Menú Oculto Inicialmente -->
         <div class="menu-movil">
-            <a href="#">Inicio</a>
-            <a href="#">Buscar Empleo</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Contáctanos</a>
+            <a href="${url_base}/index.html">Inicio</a>
+            <a href="${url_base}/pages/buscar.html">Buscar Empleo</a>
+            <a href="${url_base}/pages/nosotros.html">Nosotros</a>
+            <a href="${url_base}/pages/contacto.html">Contáctanos</a>
             <div class="c-btns c-btns-movil">
-                <button class="btn-login btn-movil">Iniciar Sesión</button>
-                <button class="btn-register btn-movil">Registrarse</button>
+                <a href="${url_base}/pages/iniciar_sesion.html" class="btn-login btn-movil">Iniciar Sesión</a>
+                <a href="${url_base}/pages/registro.html" class="btn-register btn-movil">Registrarse</a>
             </div>
         </div>
     `;
