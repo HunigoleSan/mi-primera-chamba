@@ -20,85 +20,63 @@
     <script src="../assets/js/generales/renderHeader.js" type="module"></script>
 
     <!-- header banner -->
-    <div class="contenedor_registro">
+    <div class="contenedor-register">
 
-        <div class="contenedor_img">
+        <div class="c-info-register">
 
-            <section class="contenedor_texto">
-                <h1>Hacemos fácil tu <br> búsqueda de empleo</h1>
-                <br>
-                <span>Regístrate gratis y accede a ofertas laborales, consejos y herramientas que te ayudarán a conseguir
-                    tu
-                    primera chamba</span>
-            </section>
+            <h1>Hacemos fácil tu búsqueda de empleo</h1>
+            <p>Regístrate gratis y accede a ofertas laborales, consejos y herramientas que te ayudarán a conseguir
+                tu primera chamba</p>
 
-           <center><img class="form_bannerIMG" src="../media/registro-img/img_Registro.png" alt="registroimg"> </center> 
+            <img class="form_bannerIMG" src="../media/registro-img/img_Registro.png" alt="registroimg">
+
         </div>
 
-        <div class="contenedor_formulario">
+        <div class="c-form-register">
 
-            <form action="#" class="formulario_registro">
+            <div class="intro-form">
+                <h2>
+                    Únete a Mi Primera Chamba
+                </h2>
+                <div class="p-a-group">
+                    <p>¿Ya tienes una cuenta?</p>
+                    <a href="iniciar_sesion.html">Iniciar Sesión</a>
+                </div>
+            </div>
 
-                <section class="seccion_displayfle">
-                    <div class="contenido">
-                        <h2>Unete a Mi Primera Chamba</h2>
-                        <p>¿Ya tienes una cuenta?<a href="#"><u>Inicia sesión</u> </a></p>
+
+            <div class="form-register">
+                <form action="">
+                    <div class="name-apellido-group">
+                        <div>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido">
+                        </div>
                     </div>
-                </section>
 
+                    <label for="email">Correo Electrónico</label>
+                    <input type="text" name="email" id="email">
 
-                <!-- Formulario -->
+                    <label for="nickname">Nombre de Usuario</label>
+                    <input type="text" name="nickname" id="nickname">
 
-                <section class="seccion_displayfle">
-                    <div class="contenido">
-                        <label for="">Nombres *</label>
-                        <input type="text">
-                    </div>
-                    <div class="contenido">
-                        <label for="">Apellidos *</label>
-                        <input type="text">
-                    </div>
-                </section>
+                    <label for="pass">Contraseña</label>
+                    <input type="text" name="pass" id="pass">
 
-                <section class="seccion_displayfle">
-                    <div class="contenido">
-                        <label for="">Correo electronico *</label>
-                        <input type="text" class="input_100">
-                    </div>
-                </section>
+                    <label for="repeatpass">Repetir Contraseña</label>
+                    <input type="text" name="repeatpass" id="repeatpass">
 
-                <section class="seccion_displayfle">
-                    <div class="contenido">
-                        <label for="">Nombre de usuario *</label>
-                        <input type="text" class="input_100">
-                    </div>
-                </section>
+                    <input value="Unirme" type="submit" name="subir" id="subir">
+                </form>
+            </div>
 
-                <section class="seccion_displayfle">
-                    <div class="contenido">
-                        <label for="">Contraseña *</label>
-                        <input type="text" class="input_100">
-                    </div>
-                </section>
-
-                <section class="seccion_displayfle">
-                    <div class="contenido">
-                        <label for="">Repetir contraseñ *</label>
-                        <input type="text" class="input_100">
-                    </div>
-                </section>
-                <br>
-                <section class="seccion_displayfle">
-                    <button>Unirme</button>
-                </section>
-
-            </form>
         </div>
+
     </div>
-
-
-
-
 </body>
 
 </html>

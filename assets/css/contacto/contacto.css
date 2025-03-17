@@ -183,3 +183,38 @@ form button {
 
 /* Medai Querys */
 
+@media screen and (max-width: 1200px) {
+    .c-info-contactanos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-texto {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .banner-texto {
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 15px;
+    }
+
+    .c-info-contactanos {
+        padding-inline: 1rem;
+    }
+
+    .info-ubicacion p {
+        font-size: 13px;
+    }
+
+    .info-ubicacion{
+        width: 100%;
+    }
+    
+    label{
+        font-size: 15px;
+    } 
+}
