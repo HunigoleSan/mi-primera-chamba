@@ -1,6 +1,9 @@
 .grey{
     color: var(--icon-grey);
 }
+#cerrar_jobs{
+    display: none;
+}
 .bx{
     font-size: var(--icon-size);
 }
@@ -9,6 +12,23 @@ body{
     gap: 19px; /* Por el momento */
     height: 100%;
     flex-direction: column;
+}
+main{
+    padding: 0rem 1rem;
+}
+.content_form{
+    position: relative;
+    z-index: 3;
+}
+.filter-show-mobile{
+    padding: 8px;
+    display: none;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+    color: #69707B;
+    width: max-content;
 }
 /* FILTROS */
 .jobs{
@@ -21,6 +41,7 @@ body{
     position: fixed;
     height: calc(100% - 2rem);
     overflow: hidden;
+    overflow-y: auto;
 }
 
 .actions{
@@ -219,4 +240,36 @@ body{
     gap: 0.563rem;
     color: var(--tertiary);
     font-size: var(--font-size-paragraph);
+}
+@media screen and (max-width: 768px) {
+    .filter-show-mobile{
+        display: flex;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+    #cerrar_jobs{
+        display: flex;
+    }
+    .jobs{
+        z-index: 10;
+        left:0;
+        top: 0;
+        background: white;
+        width: calc(100% - 32px);
+        max-width: unset;
+        margin: 1rem 1rem 1rem -110%;
+        transition: margin 300ms linear;
+    }
+    .publications{
+        padding-left: unset;
+    }
+    .input__group-content{
+        flex: 1;
+    }
+    
+}
+/* CSS PARA JAVASCRIPT */
+
+.job-show{
+    margin: 1rem;
 }

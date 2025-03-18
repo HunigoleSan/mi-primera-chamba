@@ -14,12 +14,17 @@
 </head>
 <body>
     <main>
-        <form class="jobs">
+        <div class="filter-show-mobile">
+            <i class='bx bx-filter'></i>
+            <span><b>Filtros</b></span>
+        </div>
+        <form id="job" class="jobs">
             <div class="actions">
                 <h3 class="actions__title">Filtros</h3>
                 <div class="actions__options">
                     <span class="actions__options-item">Limpiar</span>
                     <span class="actions__options-item">Guardar</span>
+                    <span id="cerrar_jobs" class="actions__options-item">Cerrar</span>
                 </div>
             </div>
             <div class="filters">
@@ -35,6 +40,35 @@
                     </div>
                 </div>
                 <ul class="filters__group">
+                    <li class="filters__group-item">
+                        <span id="filters__dropdown" class="filters__group-label">
+                            <span class="d-flex g-5px align-items-center">
+                                <i class='bx bx-map grey'></i>
+                                <span>Ubicación</span>
+                            </span>
+                            <i class='bx bx-chevron-up grey'></i>
+                        </span>
+                        <ul class="filters__dropdown">
+                            <li class="filters__dropdown-item filters__dropdown-item--padding">
+                                <span class="control-label">
+                                    <input id="deparments" type="text" class="control control-dropdown" placeholder="Buscar departamento">
+                                </span>
+                                <ul class="list__dropdown">
+                                    <!-- AQUI SE IMPRIME LA LISTA DE DEPARTAMENTOS -->
+                                </ul>
+                            </li>
+                            <li class="filters__dropdown-item filters__dropdown-item--padding">
+                                <span class="control-label">
+                                    <input id="citys" type="text" class="control control-dropdown" placeholder="Buscar ciudad">
+                                </span>
+                                <ul id="listCitys"  class="list__dropdown">
+                                    <!-- AQUI SE IMPRIME LA LISTA DE CIUDADES DEL DEPARTAMENTO -->
+                                    
+                                </ul>
+                            </li>
+                            <li class="filters__dropdown-item">asdasdas</li>
+                        </ul>
+                    </li>
                     <li class="filters__group-item">
                         <span id="filters__dropdown" class="filters__group-label">
                             <span class="d-flex g-5px align-items-center">
@@ -80,6 +114,7 @@
     <script src="../assets/js/publicaciones/controlListRecomendation.js" type="module"></script>
     <script src="../assets/js/publicaciones/renderListResult.js" type="module"></script>
     <script src="../assets/js/publicaciones/updateSearch.js" type="module"></script>
+    <script src="../assets/js/publicaciones/showFilters.js" type="module"></script>
 </body>
 <script src="../assets/js/generales/renderHeader.js" type="module"></script>
 <script src="../assets/js/generales/renderFooter.js" type="module"></script>

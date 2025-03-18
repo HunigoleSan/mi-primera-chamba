@@ -1,6 +1,6 @@
 export function headerFunction() {
     const header = document.createElement("header");
-    let url_base = "https://hunigolesan.github.io/mi-primera-chamba/"
+    let url_base = "http://127.0.0.1:5501"
     header.classList.add("c-header");
     header.innerHTML = `
         <div class="c-logo">
